@@ -1,0 +1,22 @@
+java.net.SocketException: socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.DataInputStream.read(Unknown Source)
+	at fileWorker.FileTransferServer$Task.run(FileTransferServer.java:171)
+	at java.lang.Thread.run(Unknown Source)
+java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at fileWorker.FileTransferClient.sendFile(FileTransferClient.java:142)
+	at ui.ShowThisAllFile$ClientWork.run(ShowThisAllFile.java:189)
+	at java.lang.Thread.run(Unknown Source)
+java.io.IOException: 系统找不到指定的文件。
+	at java.io.RandomAccessFile.readBytes(Native Method)
+	at java.io.RandomAccessFile.read(Unknown Source)
+	at fileWorker.FileTransferClient.sendFile(FileTransferClient.java:141)
+	at ui.ShowThisAllFile$ClientWork.run(ShowThisAllFile.java:189)
+	at java.lang.Thread.run(Unknown Source)
